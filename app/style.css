@@ -26,4 +26,12 @@
 .add-new-link .new-link-url {
   width: 70%;
 }
+
+.box {
+  padding: 20px;
+}
+
+.box h3, .box p {
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
