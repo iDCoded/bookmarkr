@@ -1,0 +1,15 @@
+{
+  "name": "bookmarkr",
+  "version": "1.0.0",
+  "description": "Bookmark links. ",
+  "main": "./app/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dhruv Anand",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^16.0.7"
+  }
+}
