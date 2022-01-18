@@ -1,4 +1,4 @@
-const {shell} = require('electron');
+const { shell } = require("electron");
 
 // Chromium Parser
 const parser = new DOMParser();
@@ -42,10 +42,14 @@ const validateResponse = (response) => {
 
 // Handle the error (if any)
 const handleError = (error, url) => {
+  errorMessage.classList.add("notification");
   errorMessage.innerHTML =
     `There was an issue adding "${url}": "${error.message}"`.trim();
   // Clear the error message after 5 seconds.
-  setTimeout(() => (errorMessage.innerHTML = null), 5000);
+  setTimeout(() => {
+    errorMessage.innerHTML = null;
+    errorMessage.classList.remove('notification');
+  }, 5000);
 };
 
 // Parse the response
@@ -96,11 +100,11 @@ clearStorageButton.addEventListener("click", () => {
   linkSection.innerHTML = "";
 });
 
-linkSection.addEventListener('click', (event) => {
-    if (event.target.href) {
-        event.preventDefault();
-        shell.openExternal(event.target.href);
-    }
-})
+linkSection.addEventListener("click", (event) => {
+  if (event.target.href) {
+    event.preventDefault();
+    shell.openExternal(event.target.href);
+  }
+});
 
 renderLinks();

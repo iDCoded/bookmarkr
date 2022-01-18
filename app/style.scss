@@ -1,0 +1,27 @@
+.app-name {
+  font-family: "Noto Sans Mono";
+  font-size: 32px;
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 12px;
+}
+
+.controls {
+  position: fixed;
+  bottom: 10px;
+  left: 15px;
+}
+
+.clear-storage {
+  position: fixed;
+  bottom: -5px;
+  right: 10px;
+}
+.add-new-link {
+  width: 90%;
+  padding-left: 20px;
+
+  .new-link-url {
+    width: 70%;
+  }
+}

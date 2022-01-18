@@ -5,16 +5,16 @@
     <title>Bookmarkr</title>
 </head>
 <body>
-    <h1>Bookmarkr</h1>
+    <h1 class="app-name">Bookmarkr</h1>
     
-    <div class="error-msg"></div>
+    <div class="error-msg is-danger"></div>
 
     <section class="add-new-link">
         <form class="new-link-form">
             <!-- URL Input field. -->
-            <input type="url" class="new-link-url" placeholder="Enter URL" required>
+            <input type="url" class="new-link-url input is-primary" placeholder="Enter URL" required>
             <!-- Submit button -->
-            <input type="submit" value="Submit" class="new-link-submit" disabled>
+            <input type="submit" value="Submit" class="new-link-submit button is-primary" disabled>
         </form>
     </section>
 
@@ -24,11 +24,13 @@
     <!-- Controls section -->
     <section class="controls">
         <!-- Clear Storage button -->
-        <button class="clear-storage">Clear Storage</button>
+        <button class="clear-storage button is-danger">Clear Storage</button>
     </section>
 </body>
 <!-- Load stylesheet -->
 <link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono">
 <!-- Load 'renderer.js' -->
 <script src="./renderer.js"></script>
 </html>
