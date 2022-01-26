@@ -27,10 +27,28 @@
 }
 
 .box {
-    padding: 20px;
+  padding: 20px;
 
-    h3, p {
-        text-align: center;
-    }
+  h3,
+  p {
+    text-align: center;
+  }
+}
 
+#settings-div {
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+  span {
+    pointer-events: none;
+  }
+}
+
+.settings-modal {
+  display: none;
 }

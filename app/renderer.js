@@ -48,7 +48,7 @@ const handleError = (error, url) => {
   // Clear the error message after 5 seconds.
   setTimeout(() => {
     errorMessage.innerHTML = null;
-    errorMessage.classList.remove('notification');
+    errorMessage.classList.remove("notification");
   }, 5000);
 };
 

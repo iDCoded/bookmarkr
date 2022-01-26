@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Bookmarkr</title>
 </head>
+
 <body>
     <h1 class="app-name">Bookmarkr</h1>
-    
+
     <div class="error-msg is-danger"></div>
 
     <section class="add-new-link">
@@ -26,6 +28,12 @@
         <!-- Clear Storage button -->
         <button class="clear-storage button is-danger">Clear Storage</button>
     </section>
+    <!-- Settings Button -->
+    <div id="settings-div">
+        <button class="btn settings-button">
+            <span class="fas fa-cog fa-3x"></span>
+        </button>
+    </div>
 </body>
 <!-- Load stylesheet -->
 <link rel="stylesheet" href="./style.css">
@@ -33,4 +41,9 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono">
 <!-- Load 'renderer.js' -->
 <script src="./renderer.js"></script>
+<!-- FontAwesome -->
+<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+    integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+    crossorigin="anonymous"></script>
+
 </html>

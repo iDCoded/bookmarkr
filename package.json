@@ -1,16 +1,39 @@
 {
   "name": "bookmarkr",
+  "productName": "Bookmarkr",
+  "icon": "icons/icon.ico",
   "version": "1.0.0",
   "description": "Bookmark links. ",
   "main": "./app/main.js",
   "scripts": {
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "bookmarkr",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "icons/icon.ico"
+    },
+    "nsis": {
+      "installerIcon": "icons/installer_icon.ico",
+      "uninstallerIcon": "icons/uninstaller_icon.ico",
+      "uninstallDisplayName": "Bookmarkr",
+      "license": "license.md",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
   },
   "author": "Dhruv Anand",
   "license": "ISC",
   "dependencies": {
-    "bulma": "^0.9.3",
-    "electron": "^16.0.7"
+    "bulma": "^0.9.3"
+  },
+  "devDependencies": {
+    "electron": "^16.0.7",
+    "electron-builder": "^22.14.5"
   }
 }

@@ -31,7 +31,28 @@
   padding: 20px;
 }
 
-.box h3, .box p {
+.box h3,
+.box p {
   text-align: center;
+}
+
+#settings-div {
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+}
+
+#settings-div button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#settings-div span {
+  pointer-events: none;
+}
+
+.settings-modal {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
