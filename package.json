@@ -22,7 +22,7 @@
       "installerIcon": "icons/installer_icon.ico",
       "uninstallerIcon": "icons/uninstaller_icon.ico",
       "uninstallDisplayName": "Bookmarkr",
-      "license": "license.md",
+      "license": "LICENSE",
       "oneClick": false,
       "allowToChangeInstallationDirectory": true
     }
